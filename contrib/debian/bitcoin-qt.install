@@ -1,0 +1,6 @@
+usr/local/bin/lisynetwork-qt usr/bin
+share/pixmaps/lisynetwork32.xpm usr/share/pixmaps
+share/pixmaps/lisynetwork16.xpm usr/share/pixmaps
+share/pixmaps/lisynetwork128.png usr/share/pixmaps
+debian/lisynetwork-qt.desktop usr/share/applications
+debian/lisynetwork-qt.protocol usr/share/kde4/services/

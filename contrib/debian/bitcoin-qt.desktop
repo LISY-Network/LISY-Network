@@ -1,0 +1,13 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=LISYNetwork Core
+Comment=Connect to the LISYNetwork P2P Network
+Comment[de]=Verbinde mit dem LISYNetwork peer-to-peer Netzwerk
+Comment[fr]=LISYNetwork, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=LISYNetwork, eşten eşe kriptografik sanal para birimi
+Exec=lisynetwork-qt %u
+Terminal=false
+Type=Application
+Icon=lisynetwork128
+MimeType=x-scheme-handler/lisynetwork;
+Categories=Office;Finance;

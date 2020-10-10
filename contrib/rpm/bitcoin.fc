@@ -1,0 +1,8 @@
+/usr/bin/lisynetwork-cli		--	gen_context(system_u:object_r:lisynetwork_exec_t,s0)
+/usr/sbin/lisynetworkd		--	gen_context(system_u:object_r:lisynetwork_exec_t,s0)
+/usr/lib(64)?/lisynetwork/lisynetworkd		--	gen_context(system_u:object_r:lisynetwork_exec_t,s0)
+
+/etc/lisynetwork(/.*)?		gen_context(system_u:object_r:lisynetwork_conf_t,s0)
+/var/lib/lisynetwork(/.*)?		gen_context(system_u:object_r:lisynetwork_var_lib_t,s0)
+
+(/var)?/run/lisynetworkd(/.*)?   gen_context(system_u:object_r:lisynetwork_var_run_t,s0)

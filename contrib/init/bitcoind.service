@@ -1,0 +1,22 @@
+[Unit]
+Description=LISYNetwork's distributed currency daemon
+After=network.target
+
+[Service]
+User=lisynetwork
+Group=lisynetwork
+
+Type=forking
+PIDFile=/var/lib/lisynetworkd/lisynetworkd.pid
+ExecStart=/usr/bin/lisynetworkd -daemon -pid=/var/lib/lisynetworkd/lisynetworkd.pid \
+-conf=/etc/lisynetwork/lisynetwork.conf -datadir=/var/lib/lisynetworkd -disablewallet
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

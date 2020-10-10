@@ -1,0 +1,11 @@
+[Protocol]
+exec=lisynetwork-qt '%u'
+protocol=lisynetwork
+input=none
+output=none
+helper=true
+listing=
+reading=false
+writing=false
+makedir=false
+deleting=false

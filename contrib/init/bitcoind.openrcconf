@@ -1,0 +1,33 @@
+# /etc/conf.d/lisynetworkd: config file for /etc/init.d/lisynetworkd
+
+# Config file location
+#LISYNETWORKD_CONFIGFILE="/etc/lisynetwork/lisynetwork.conf"
+
+# What directory to write pidfile to?  (created and owned by $LISYNETWORKD_USER)
+#LISYNETWORKD_PIDDIR="/var/run/lisynetworkd"
+
+# What filename to give the pidfile
+#LISYNETWORKD_PIDFILE="${LISYNETWORKD_PIDDIR}/lisynetworkd.pid"
+
+# Where to write lisynetworkd data (be mindful that the blockchain is large)
+#LISYNETWORKD_DATADIR="/var/lib/lisynetworkd"
+
+# User and group to own lisynetworkd process
+#LISYNETWORKD_USER="lisynetwork"
+#LISYNETWORKD_GROUP="lisynetwork"
+
+# Path to lisynetworkd executable
+#LISYNETWORKD_BIN="/usr/bin/lisynetworkd"
+
+# Nice value to run lisynetworkd under
+#LISYNETWORKD_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+#LISYNETWORKD_OPTS=""
+
+# The timeout in seconds OpenRC will wait for lisynetworkd to terminate
+# after a SIGTERM has been raised.
+# Note that this will be mapped as argument to start-stop-daemon's
+# '--retry' option, which means you can specify a retry schedule
+# here. For more information see man 8 start-stop-daemon.
+LISYNETWORKD_SIGTERM_TIMEOUT=60
